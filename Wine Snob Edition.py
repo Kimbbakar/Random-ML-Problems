@@ -9,4 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.externals import joblib
  
 data = pd.read_csv('winequality.csv',sep=';')
- 
+
+Y = data.quality
+X = data.drop('quality',axis = 1)
+
