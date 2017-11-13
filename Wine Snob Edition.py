@@ -7,3 +7,6 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_squared_error, r2_score	
 from sklearn.externals import joblib
+ 
+data = pd.read_csv('winequality.csv',sep=';')
+ 
