@@ -17,3 +17,8 @@ X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.2,random_stat
 
 	
 scaler = preprocessing.StandardScaler().fit(X_train)
+
+X_train_scaled = scaler.transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+print X_test_scaled
